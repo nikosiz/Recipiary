@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Home | Recipiary</title>
+
+    <link href="assets/icon.svg" rel="shortcut icon" type="image/x-icon"/>
+
+    <link href="./css/normalize.css" rel="stylesheet"/>
+
+    <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+            rel="stylesheet"
+    />
+
+    <link href="./css/main.css" rel="stylesheet"/>
+    <link href="//fonts.googleapis.com/css?family=Oswald" rel="stylesheet"/>
+    <link href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="nav-center">
+        <div class="nav-header">
+            <a class="nav-logo" href="index.html">
+                <img alt="recipiary" src="./assets/logo.svg"/>
+            </a>
+            <button class="nav-btn btn">
+                <i class="fas fa-align-justify"></i>
+            </button>
+        </div>
+        <div class="nav-links">
+            <a class="nav-link" href="index.html"> Home </a>
+            <a class="nav-link" href="recipes.html"> Recipes </a>
+            <a class="nav-link" href="contact.html"> Contact </a>
+
+            <div class="nav-link search-box">
+                <input id="searchInput" placeholder="Search recipes" type="search">
+                <i class="fas fa-search"></i>
+            </div>
+        </div>
+    </div>
+</nav>
+
+
+<main class="page">
+
+    <header class="hero">
+        <div class="hero-container">
+            <div class="hero-text">
+                <h1>Recipiary</h1>
+                <h3>WITH ALL THE BASIC INGREDIENTS</h3>
+            </div>
+        </div>
+    </header>
+
+    <section class="home-page">
+        <article>
+            <h2>Can vegetables feel pain when you bite into them? </h2>
+            <p>
+                What’s the difference between a light meal and a large snack?<br><br>
+
+                Where does the hedgehog stomp at night?</p>
+            <p>
+                We don't know. But we know that you want to cook something.
+                That's why we strongly encourage you to feel at home :-)
+            </p>
+            <a class="btn btn-block" href="contact.html" justify="center" type="contact">
+                Also, feel free to contact us any time!
+            </a>
+        </article>
+
+        <img
+                alt="Plates with food on the table"
+                class="img home-img"
+                src="assets/main-page-photo.jpeg"
+        />
+    </section>
+
+    <section class="featured-recipes">
+        <h5 class="featured-title">Come look at this!</h5>
+        <div class="recipes-list">
+
+            <a class="recipe" href="recipes/sweet-potato-crostini-recipe.html">
+                <div class="container">
+                    <img
+                            alt=""
+                            class="img recipe-img"
+                            src="./assets/recipes/Crostini.jpeg"
+                    >
+                    <div class="recipe-hover">
+                        <div class="text">Try recipe!</div>
+                    </div>
+                </div>
+                <h5>Sweet Potato Crostini</h5>
+                <p>Prep time : 50min | Servings : 12</p>
+            </a>
+
+
+            <a class="recipe" href="recipes/spicy-indian-chapli-kebabs-recipe.html">
+                <div class="container">
+                    <img
+                            alt=""
+                            class="img recipe-img"
+                            src="./assets/recipes/Chapli-kebabs.jpeg"
+                    >
+                    <div class="recipe-hover">
+                        <div class="text">Try recipe!</div>
+                    </div>
+                </div>
+                <h5>Spicy Indian Chapli Kebabs</h5>
+                <p>Prep time : 15min | Servings : 12</p>
+            </a>
+
+
+            <a class="recipe" href="recipes/crispy-baked-chicken-wings-recipe.html">
+                <div class="container">
+                    <img
+                            alt=""
+                            class="img recipe-img"
+                            src="assets/recipes/Chicken-wings.jpeg"
+                    >
+                    <div class="recipe-hover">
+                        <div class="text">Try recipe!</div>
+                    </div>
+                </div>
+                <h5>Crispy Baked Chicken Wings</h5>
+                <p>Prep time : 45min | Servings : 12</p>
+            </a>
+
+        </div>
+    </section>
+</main>
+
+
+<footer class="page-footer">
+    <p>
+        &copy; <span id="date"></span>
+        <span class="footer-logo">Recipiary</span>
+    </p>
+</footer>
+<script src="./js/app.js"></script>
+</body>
+</html>

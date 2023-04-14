@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Vege | Recipiary</title>
+
+    <link href="../assets/icon.svg" rel="shortcut icon" type="image/x-icon"/>
+
+    <link href="../css/normalize.css" rel="stylesheet"/>
+
+    <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+            rel="stylesheet"
+    />
+
+    <link href="../css/main.css" rel="stylesheet"/>
+
+    <link href="//fonts.googleapis.com/css?family=Oswald" rel="stylesheet"/>
+    <link href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="nav-center">
+        <div class="nav-header">
+            <a class="nav-logo" href="../index.html">
+                <img alt="recipiary" src="../assets/logo.svg"/>
+            </a>
+            <button class="nav-btn btn">
+                <i class="fas fa-align-justify"></i>
+            </button>
+        </div>
+        <div class="nav-links">
+            <a class="nav-link" href="../index.html"> Home </a>
+            <a class="nav-link" href="../recipes.html"> Recipes </a>
+            <a class="nav-link" href="../contact.html"> Contact </a>
+
+            <div class="nav-link search-box">
+                <input id="searchInput" placeholder="Search recipes" type="search">
+                <i class="fas fa-search"></i>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<main class="page">
+    <section class="recipes-container">
+        <div class="tags-container">
+            <h4 style="font-family: Oswald, sans-serif">Tags</h4>
+            <div class="tags-list">
+                <a href="tag-appetizers-and-snacks.html">Appetizers and snacks</a>
+                <a href="tag-beef.html">Beef</a>
+                <a href="tag-bread.html">Bread</a>
+                <a href="tag-breakfast-and-brunch.html">Breakfast and brunch</a>
+                <a href="tag-chicken.html">Chicken</a>
+                <a href="tag-desserts.html">Desserts</a>
+                <a href="tag-diet-and-healthy.html">Diet and healthy</a>
+                <a href="tag-dinner.html">Dinner</a>
+                <a href="tag-lunch.html">Lunch</a>
+                <a href="tag-main-dishes.html">Main dishes</a>
+                <a href="tag-salad.html">Salad</a>
+                <a href="tag-side-dishes.html">Side dishes</a>
+                <a href="tag-vege.html">Vege</a>
+                <a href="tag-world-cuisine.html">World cuisine</a>
+            </div>
+        </div>
+
+        <div class="featured-recipes">
+            <h4 style="font-family: Oswald, sans-serif">Vege</h4>
+
+            <div class="recipes-list">
+
+                <a class="recipe" href="../recipes/broccoli-apple-salad-recipe.html">
+                    <div class="container">
+                        <img
+                                alt=""
+                                class="img recipe-img"
+                                src="../assets/recipes/Broccoli-apple-salad.jpeg"
+                        />
+                        <div class="recipe-hover">
+                            <div class="text">Try recipe!</div>
+                        </div>
+                    </div>
+                    <h5>Broccoli Apple Salad</h5>
+                    <p>Prep time : 15min | Servings : 8</p>
+                </a>
+
+                <a class="recipe" href="../recipes/fresh-summer-berry-salsa-recipe.html">
+                    <div class="container">
+                        <img
+                                alt=""
+                                class="img recipe-img"
+                                src="../assets/recipes/Berry-salsa.jpeg"
+                        />
+                        <div class="recipe-hover">
+                            <div class="text">Try recipe!</div>
+                        </div>
+                    </div>
+                    <h5>Fresh Summer Berry Salsa</h5>
+                    <p>Prep time : 10min | Servings : 4</p>
+                </a>
+
+                <a class="recipe" href="../recipes/gluten-free-pumpkin-muffins-recipe.html">
+                    <div class="container">
+                        <img
+                                alt=""
+                                class="img recipe-img"
+                                src="../assets/recipes/Pumpkin-muffins.jpeg"
+                        />
+                        <div class="recipe-hover">
+                            <div class="text">Try recipe!</div>
+                        </div>
+                    </div>
+                    <h5>Gluten-Free Pumpkin Muffins</h5>
+                    <p>Prep time : 30min | Servings : 12</p>
+                </a>
+
+                <a class="recipe" href="../recipes/persian-shirazi-salad-recipe.html">
+                    <div class="container">
+                        <img
+                                alt=""
+                                class="img recipe-img"
+                                src="../assets/recipes/Persian-shirazi-salad.jpeg"
+                        />
+                        <div class="recipe-hover">
+                            <div class="text">Try recipe!</div>
+                        </div>
+                    </div>
+                    <h5>Persian Shirazi Salad</h5>
+                    <p>Prep time : 10min | Servings : 4</p>
+                </a>
+
+                <a class="recipe" href="../recipes/tomato-egg-rings-recipe.html">
+                    <div class="container">
+                        <img
+                                alt=""
+                                class="img recipe-img"
+                                src="../assets/recipes/Tomato-egg-rings.jpeg"
+                        />
+                        <div class="recipe-hover">
+                            <div class="text">Try recipe!</div>
+                        </div>
+                    </div>
+                    <h5>Tomato Egg Rings with Herbs</h5>
+                    <p>Prep time : 5min | Servings : 1</p>
+                </a>
+
+            </div>
+
+        </div>
+    </section>
+
+</main>
+
+<footer class="page-footer">
+    <p>
+        &copy; <span id="date"></span>
+        <span class="footer-logo">Recipiary</span>
+    </p>
+</footer>
+<script src="../js/app.js"></script>
+</body>
+</html>
